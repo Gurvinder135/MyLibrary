@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>  <div class="main_heading">
+  <img id="img" src="main.png" alt="">
+  <div id="heading">My Library</div>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+</div>
+  
+  <div class="main">
+        <div class="container">
+          <div class="flex flex1">
+          <div class="heading">Title</div>
+          <div class="heading">Author</div>
+          <div class="heading">Number of Pages</div>
+          <div class="heading">Read Book</div>
+          <div class="heading"> Delete Book</div>
+          <div class="heading">Toggle Read Status</div>
+          </div>
+          
+        </div>
+        
+        
+        <div class="button"></div>
+      </div>
+
+      <div class="form">
+        <form id="form">
+          <label class="element" for="title">Title</label>
+          <input class="element" id="title" type="text" placeholder="Title" value="" required>
+          <label class="element" for="author">Author</label>
+          <input class="element" id="author" type="text" placeholder="Author" value="" required>
+          <label class="element" for="pages">No. of pages</label>
+          <input class="element" id="pages" type="number" placeholder="No. of pages" value="" required>
+          <div class="element">
+          <label class="element" for="read">Read The Book?</label>
+          <input class="element" id="read" type="checkbox"  value="Yes">
+        </div>
+          <input class="element" type="submit" id="submit" value="submit">
+          
+        </form></div>
+        <script src="script.js"></script>
+      
+</body>
+</html> 

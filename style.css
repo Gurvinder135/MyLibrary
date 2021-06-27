@@ -1,0 +1,124 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.main_heading{
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+}
+#img{
+    width: 5vw;
+    height: 5vw;
+    margin: auto;
+}
+#heading{
+    margin: 1.5vw auto;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.container{
+    display: flex;
+    flex-direction:column;
+    margin: auto;
+    width: 65%;
+    border: 2px solid gray;
+    padding: 1vw 1vw 0.7vw 2vw;
+    border-radius: 2vw;
+    background-color: rgba(245, 202, 10, 0.39);
+}
+
+.element{
+    font-size: 1vw;
+    padding: 0.4vw;
+    text-align: center;
+}
+
+.flex{
+    display:grid;
+    width: 62vw;
+    grid-template-columns: repeat(6, 1fr);
+}
+    
+.flex1{
+    border: 2px solid black;
+    border-radius: 3vw;
+    background-color: rgba(194, 166, 166, 0.274);
+    padding: 0.5vw 1vw ;
+
+}
+.button{
+    background: url("plus.jpg");
+    position: fixed;
+    width: 5vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid gray;
+    border-radius: 50%;
+    height: 5vw;
+    background-size: 4vw 4vw;
+    left: 94vw;
+    top: 31vw;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    
+}
+.button:hover{
+    
+    transform: rotate(45deg) scale(1.2);;
+}
+#form{
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    left: 36%;
+    top: 16%;
+    border: 2px solid gray;
+    padding: 1vw;
+    border-radius: 1vw;
+    width: 25vw;
+    height: 16vw;
+    background-color: #eff4e5;
+}
+.form{
+    display: none;
+}
+.delete{
+    background: url("delete.png");
+    background-repeat: no-repeat;
+    background-size: 1.5vw 1.5vw;
+    width: 2vw;
+    height: 2vw;
+    cursor: pointer;
+}
+.heading, .table{
+    margin:0.5vw auto;
+
+}
+.heading{
+    font-size: 1.2vw;
+    color: rgb(31, 25, 25);
+}
+
+.toggle{
+    background-color: gray;
+    width: 2.8vw;
+    height: 1.5vw;
+    border-radius: 1vw;
+}
+
+.innerCircle{
+    background-color: white;
+    width: 1.3vw;
+    margin:0.1vw;
+    height: 1.3vw;
+    border-radius: 50%;
+}
+
+.toggle.active{
+    background-color: #00acee;
+}
+.toggle.active > .innerCircle{
+    margin-left: 1.3vw;
+}
