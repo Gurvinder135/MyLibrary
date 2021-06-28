@@ -125,8 +125,12 @@ function remove(b){
 
 }  
 window.onload=function(){
-  myLibrary=JSON.parse(window.sessionStorage.getItem('user'))
+  myLibrary=JSON.parse(window.sessionStorage.getItem('user'));
+  if(myLibrary===null){
+    myLibrary=[];
+  } else{
   for(items in myLibrary){
     books_list(items);
-  }
+  }}
+  
 }
